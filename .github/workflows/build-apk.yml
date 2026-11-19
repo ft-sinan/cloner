@@ -14,33 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '17'
 
-      - name: Accept Android SDK licenses
-        run: |
-          if [ -x "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" ]; then
-            yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
-          fi
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build web app
-        run: npm run build
-
-      - name: Sync Capacitor Android project
-        run: npx cap sync android
-
-      - name: Build debug APK
-        working-directory: android
+      - name: Build native FT Cloner APK
+        working-directory: cloner-android
         run: |
           chmod +x ./gradlew
           ./gradlew assembleDebug --no-daemon
@@ -49,14 +29,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ft-cloner-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: cloner-android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30
 
       - name: Save APK in repository
         run: |
           mkdir -p apk
-          cp android/app/build/outputs/apk/debug/app-debug.apk apk/FT-Cloner.apk
+          cp cloner-android/app/build/outputs/apk/debug/app-debug.apk apk/FT-Cloner.apk
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add apk/FT-Cloner.apk
