@@ -1,0 +1,8 @@
+{
+  "appId": "com.ftsinan.cloner",
+  "appName": "FT Cloner",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  }
+}
