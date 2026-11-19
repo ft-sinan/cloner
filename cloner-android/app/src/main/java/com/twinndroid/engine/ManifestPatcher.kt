@@ -148,6 +148,27 @@ object ManifestPatcher {
             val v = a.str() ?: continue
             if (v.startsWith(oldPkg)) a.setValueAsString(newPkg + v.removePrefix(oldPkg))
         }
+
+        // 7. Aliases can point at the original package explicitly. After renaming, that leaves
+        // the alias resolving to the *original* app, so its deep links never reach the clone.
+        for (el in elements) {
+            if (el.name != "activity-alias") continue
+            val a = el.attr(android.R.attr.targetPackage) ?: continue
+            val v = a.str() ?: continue
+            if (v == oldPkg || v.startsWith("$oldPkg.")) {
+                a.setValueAsString(newPkg + v.removePrefix(oldPkg))
+            }
+        }
+
+        // 8. Verified App Links are tied to the signing key. A clone is re-signed, so it can
+        // never pass the original's assetlinks verification and Android then omits it from
+        // "Open with" sheets (this is what makes WhatsApp's onboarding jump out to a chooser).
+        // Dropping autoVerify keeps the deep-link filters as ordinary implicit handlers,
+        // which makes the clone appear alongside the original.
+        for (el in elements) {
+            if (el.name == "intent-filter") el.removeAttributesWithId(android.R.attr.autoVerify)
+        }
+
         return authorityStrings
     }
 
