@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MONSOON.EXE — a hand-coded homepage from Kerala</title>
+<meta name="description" content="A hand-built Y2K homepage: monsoon field notes from Thiruvananthapuram, a shrine to tea, a frog mascot, a guestbook, and no algorithms. Made with plain HTML.">
+<meta name="author" content="monsoon.exe">
+<meta name="theme-color" content="#06050d">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="MONSOON.EXE — a hand-coded homepage from Kerala">
+<meta property="og:description" content="Monsoon field notes, a tea shrine, a frog, a guestbook. Built by hand in plain HTML, because the web is a place, not a feed.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/banner.jpg">
+</head>
+<body>
+<a class="skip" href="#main">skip to content</a>
+
+<!-- ============ ticker ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>★ <b>NEW</b> field notes #07: the 4am tea stall ★ sign the guestbook and I will link you back ★</span>
+    <span>this site is <b>100% hand-coded</b> · no framework · no analytics · no AI ★</span>
+    <span>visitor <b>No. 2,483,051</b> — hi, glad you made it ★</span>
+    <span>best viewed at <b>1024×768</b> or on a phone in the rain ★</span>
+    <span>★ <b>NEW</b> field notes #07: the 4am tea stall ★ sign the guestbook and I will link you back ★</span>
+    <span>this site is <b>100% hand-coded</b> · no framework · no analytics · no AI ★</span>
+    <span>visitor <b>No. 2,483,051</b> — hi, glad you made it ★</span>
+    <span>best viewed at <b>1024×768</b> or on a phone in the rain ★</span>
+  </div>
+</div>
+
+<div class="shell">
+
+  <!-- ============ masthead ============ -->
+  <header class="masthead">
+    <div class="mast">
+      <div class="mast__inner">
+        <div class="brand">
+          <a class="brand__mark" href="index.html" aria-label="monsoon.exe home">
+            <img src="img/mascot.jpg" alt="" width="68" height="68">
+          </a>
+          <div>
+            <h1 class="site-title">MONSOON<span style="color:var(--magenta)">.</span>EXE</h1>
+            <p class="site-tag">a personal homepage from <b>Thiruvananthapuram</b> · est. 2001, re-uploaded 2026</p>
+          </div>
+          <div class="brand__meta">
+            <span class="pill"><i class="dot"></i> hand-coded</span>
+            <span class="pill pill--hot">no algorithms</span>
+            <span class="pill"><span data-clock-short>--:--</span> IST</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main">
+          <a href="index.html" aria-current="page">home</a>
+          <a href="journal.html">field notes</a>
+          <a href="shrines.html">shrines</a>
+          <a href="guestbook.html">guestbook</a>
+          <a href="about.html">about / links</a>
+          <a href="#webring">webring</a>
+          <a class="nav--out" href="https://neocities.org" rel="noopener" target="_blank">neocities</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ hero ============ -->
+  <div class="hero">
+    <img class="hero__img" src="img/banner.jpg" alt="Dithered pixel art: a lightning storm over Kerala backwaters with palm trees, a houseboat, and a blue grid on the water." width="1200" height="396">
+    <canvas id="rain" aria-hidden="true"></canvas>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__plaque">
+      <div class="plaque">
+        <div class="plaque__in">
+          <h2>WELCOME, TRAVELLER</h2>
+          <p class="typed" data-type='["it is raining. it is always raining.","grab a chai, stay a while.","this page weighs less than one ad.","turn on the sound. it is just rain."]'><span class="typed__text">it is raining. it is always raining.</span><span class="caret" aria-hidden="true"></span></p>
+        </div>
+      </div>
+      <div class="hero__badges">
+        <img src="img/btn-monsoon.png" alt="MONSOON.NET button" width="88" height="31">
+        <img src="img/btn-antic.png" alt="ANTI .AI button" width="88" height="31">
+        <img src="img/btn-y2k.png" alt="Y2K 4EVER button" width="88" height="31">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ body ============ -->
+  <div class="layout">
+
+    <main class="stack" id="main">
+
+      <!-- intro -->
+      <section class="win" aria-labelledby="h-intro">
+        <div class="win__bar">
+          <span aria-hidden="true">▣</span>
+          <span class="win__name">C:\MONSOON\README.TXT</span>
+          <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="win__body prose">
+          <h2 class="h" id="h-intro">a website, not a profile</h2>
+          <p>I am <strong>Nalini</strong>. I live in a rented flat with a bad ceiling fan, two cats who are not mine, and a router I restart every evening like a small prayer. This is my homepage. It has been on the internet in one form or another since I was fourteen and teaching myself <kbd>&lt;marquee&gt;</kbd>.</p>
+          <p>It is a <em>place</em>: a few rooms you can walk through, some photos I took on a camera that cost ₹3,000 at Chalai market, a shrine to tea, a hall of small things, and a guestbook where people say hello and I write back. There is no feed here. Nothing autoplays at you. The order of things does not change because a machine decided you were bored.</p>
+          <p class="tiny" style="margin-top:14px">last updated <b>27 nov 2026</b> · 47 kb of html · 0 trackers</p>
+          <p><span class="wip"><span>🚧 under construction since 2001 🚧</span></span></p>
+          <div class="note">
+            <b>psst.</b> Press <kbd>R</kbd> to turn the rain on or off, <kbd>S</kbd> to switch the CRT scanlines, and click the pink ⚙ button in the corner if you would rather use buttons. Your choices are remembered in this browser and nowhere else.
+          </div>
+        </div>
+      </section>
+
+      <!-- updates -->
+      <section class="win" aria-labelledby="h-updates">
+        <div class="win__bar">
+          <span aria-hidden="true">▣</span>
+          <span class="win__name">RECENT_UPDATES.LOG</span>
+          <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="win__body">
+          <h2 class="h" id="h-updates">what changed around here</h2>
+          <ul class="updates">
+            <li><time datetime="2026-11-27">27 nov 26</time> <span><a href="journal.html#n07">Field notes #07 — the 4am tea stall</a><span class="tag">new</span></span></li>
+            <li><time datetime="2026-11-21">21 nov 26</time> <span><a href="shrines.html#tea">Opened the tea shrine</a> (it is just a list of teas, but from the heart)</span></li>
+            <li><time datetime="2026-11-14">14 nov 26</time> <span>Added <a href="journal.html#n06">a photo essay about the power cut</a></span></li>
+            <li><time datetime="2026-11-02">02 nov 26</time> <span>New frog mascot, drawn in a pixel editor at 2am</span></li>
+            <li><time datetime="2026-10-28">28 oct 26</time> <span>Fixed the guestbook script (again) · <a href="guestbook.html">sign it?</a></span></li>
+            <li><time datetime="2026-10-19">19 oct 26</time> <span>Found an old MIDI folder. Now there are <a href="shrines.html#sound">sounds</a></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- button wall -->
+      <section class="win" aria-labelledby="h-buttons">
+        <div class="win__bar">
+          <span aria-hidden="true">▣</span>
+          <span class="win__name">BUTTON_WALL.HTM</span>
+          <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="win__body">
+          <h2 class="h" id="h-buttons">the button wall</h2>
+          <p class="small dim" style="margin-top:0">88×31 pixels of pure belief. Take my button, link me back, and I will add yours.</p>
+          <div class="badges">
+            <a href="index.html"><img src="img/btn-monsoon.png" alt="MONSOON.NET" width="88" height="31"></a>
+            <a href="shrines.html#tea"><img src="img/btn-lofi.png" alt="LO-FI" width="88" height="31"></a>
+            <a href="about.html"><img src="img/btn-madebyhand.png" alt="MADE BY HAND" width="88" height="31"></a>
+            <a href="about.html#why"><img src="img/btn-antic.png" alt="ANTI .AI" width="88" height="31"></a>
+            <a href="journal.html"><img src="img/btn-zine.png" alt="ZINE VOL. 4" width="88" height="31"></a>
+            <a href="shrines.html#sound"><img src="img/btn-getsound.png" alt="SOUND ON" width="88" height="31"></a>
+            <a href="guestbook.html"><img src="img/btn-guestbook.png" alt="SIGN MY BOOK" width="88" height="31"></a>
+            <a href="shrines.html#frog"><img src="img/btn-frog.png" alt="FROG APPROVED" width="88" height="31"></a>
+            <a href="https://neocities.org" rel="noopener" target="_blank"><img src="img/btn-neocities.png" alt="NEOCITIES" width="88" height="31"></a>
+            <a href="about.html#kerala"><img src="img/btn-kerala.png" alt="KERALA WEB" width="88" height="31"></a>
+            <a href="about.html#why"><img src="img/btn-ntuples.png" alt="NO METAVERSE" width="88" height="31"></a>
+            <a href="index.html#webring"><img src="img/btn-monospace.png" alt="&lt;MARQUEE&gt;" width="88" height="31"></a>
+          </div>
+
+          <hr class="hr">
+
+          <div class="mybutton">
+            <a href="index.html"><img src="img/btn-monsoon.png" alt="MONSOON.NET button" width="88" height="31"></a>
+            <div style="flex:1;min-width:200px">
+              <p class="tiny">link me / take my button</p>
+              <textarea class="codebox" id="btncode" readonly rows="3" aria-label="HTML for linking to this site">&lt;a href="https://monsoon.neocities.org/"&gt;&lt;img src="https://monsoon.neocities.org/img/btn-monsoon.png" width="88" height="31" alt="MONSOON.NET"&gt;&lt;/a&gt;</textarea>
+              <p class="row" style="margin:6px 0 0"><button class="btn btn--acid" type="button" data-copy="#btncode">copy html</button><span class="tiny" style="color:#6f6899">no hotlink shame, just bandwidth</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <img src="img/btn-y2k.png" alt="" width="88" height="31"><img src="img/btn-rss.png" alt="" width="88" height="31"><img src="img/btn-html401.png" alt="" width="88" height="31"><img src="img/btn-frames.png" alt="" width="88" height="31"><img src="img/btn-neocities.png" alt="" width="88" height="31"><img src="img/btn-antic.png" alt="" width="88" height="31"><img src="img/btn-lofi.png" alt="" width="88" height="31"><img src="img/btn-monospace.png" alt="" width="88" height="31"><img src="img/btn-zine.png" alt="" width="88" height="31"><img src="img/btn-frog.png" alt="" width="88" height="31"><img src="img/btn-kerala.png" alt="" width="88" height="31"><img src="img/btn-guestbook.png" alt="" width="88" height="31">
+            <img src="img/btn-y2k.png" alt="" width="88" height="31"><img src="img/btn-rss.png" alt="" width="88" height="31"><img src="img/btn-html401.png" alt="" width="88" height="31"><img src="img/btn-frames.png" alt="" width="88" height="31"><img src="img/btn-neocities.png" alt="" width="88" height="31"><img src="img/btn-antic.png" alt="" width="88" height="31"><img src="img/btn-lofi.png" alt="" width="88" height="31"><img src="img/btn-monospace.png" alt="" width="88" height="31"><img src="img/btn-zine.png" alt="" width="88" height="31"><img src="img/btn-frog.png" alt="" width="88" height="31"><img src="img/btn-kerala.png" alt="" width="88" height="31"><img src="img/btn-guestbook.png" alt="" width="88" height="31">
+          </div>
+        </div>
+      </section>
+
+      <!-- field notes preview -->
+      <section class="win" aria-labelledby="h-photos">
+        <div class="win__bar">
+          <span aria-hidden="true">▣</span>
+          <span class="win__name">FIELD_NOTES\EXPEDITION_041.JPG</span>
+          <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="win__body">
+          <h2 class="h" id="h-photos">from the last walk</h2>
+          <div class="shrine" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+            <figure style="margin:0">
+              <a href="journal.html#n07"><img src="img/photo-window-s.jpg" alt="Rain on a window at night, chai in a steel tumbler and a glowing phone on the sill" style="border-radius:5px;border:1px solid rgba(125,249,255,.3)"></a>
+              <figcaption class="tiny" style="margin-top:6px">02:41 · window · 1/8 sec</figcaption>
+            </figure>
+            <figure style="margin:0">
+              <a href="journal.html#n06"><img src="img/photo-street-s.jpg" alt="A flooded street at dusk with neon reflections, a scooter and an autorickshaw" style="border-radius:5px;border:1px solid rgba(125,249,255,.3)"></a>
+              <figcaption class="tiny" style="margin-top:6px">18:12 · chalai · iso 800</figcaption>
+            </figure>
+          </div>
+          <p style="margin:14px 0 0"><a href="journal.html">read all the field notes →</a></p>
+        </div>
+      </section>
+
+      <!-- guestbook preview -->
+      <section class="win" aria-labelledby="h-gb">
+        <div class="win__bar">
+          <span aria-hidden="true">▣</span>
+          <span class="win__name">GUESTBOOK.DAT — <span data-gb-count>4</span> ENTRIES</span>
+          <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="win__body">
+          <h2 class="h" id="h-gb">the guestbook</h2>
+          <div class="gb" data-guestbook>
+            <noscript><p class="gb__empty">Enable JavaScript to read the guestbook, or <a href="guestbook.html">open the guestbook page</a>.</p></noscript>
+          </div>
+          <p style="margin:16px 0 0"><a class="btn btn--magenta" href="guestbook.html">✎ sign the guestbook</a></p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ sidebar ============ -->
+    <aside class="side" aria-label="Sidebar">
+
+      <section class="win" aria-labelledby="h-counter">
+        <div class="win__bar"><span class="win__name">VISITOR_COUNTER.CGI</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-counter" style="font-size:9px">you are visitor number</h2>
+          <div class="counter"><b data-counter>002483051</b><span class="lbl">HITS</span></div>
+          <p class="tiny" style="margin:9px 0 0;text-align:center">counted in this browser · no cookies, no IP, no beard</p>
+          <hr class="hr" style="margin:12px 0">
+          <p class="tiny" style="margin:0 0 4px">local time in trivandrum</p>
+          <p class="center" style="margin:0;font-family:var(--term);font-size:26px;color:var(--cyan);text-shadow:0 0 14px rgba(125,249,255,.7)" data-clock>--:--:--</p>
+        </div>
+      </section>
+
+      <section class="win" aria-labelledby="h-status">
+        <div class="win__bar"><span class="win__name">STATUS.SYS</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-status" style="font-size:9px">right now</h2>
+          <div class="mood">
+            <div class="mood__face" aria-hidden="true">☂</div>
+            <div>
+              <p style="margin:0;font-size:17px">damp, caffeinated, hopeful</p>
+              <p class="tiny" style="margin:2px 0 0">mood: 7/10 · chai: 3rd cup</p>
+            </div>
+          </div>
+          <hr class="hr" style="margin:12px 0">
+          <dl class="facts" style="font-family:var(--term);font-size:15px">
+            <div style="grid-template-columns:74px 1fr;padding:6px 0"><dt style="font-family:var(--term);font-size:15px;color:var(--magenta);text-transform:none;letter-spacing:0;padding:0">listening</dt><dd style="font-size:15px">rain + a fan</dd></div>
+            <div style="grid-template-columns:74px 1fr;padding:6px 0"><dt style="font-family:var(--term);font-size:15px;color:var(--magenta);text-transform:none;letter-spacing:0;padding:0">reading</dt><dd style="font-size:15px">a library book, 9 days late</dd></div>
+            <div style="grid-template-columns:74px 1fr;padding:6px 0"><dt style="font-family:var(--term);font-size:15px;color:var(--magenta);text-transform:none;letter-spacing:0;padding:0">weather</dt><dd style="font-size:15px">28°C, 94% humidity</dd></div>
+            <div style="grid-template-columns:74px 1fr;padding:6px 0;border-bottom:none"><dt style="font-family:var(--term);font-size:15px;color:var(--magenta);text-transform:none;letter-spacing:0;padding:0">building</dt><dd style="font-size:15px">this page, always</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="win" aria-labelledby="h-mascot">
+        <div class="win__bar"><span class="win__name">MASCOT.PNG</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px;text-align:center">
+          <h2 class="h" id="h-mascot" style="font-size:9px">say hello to pacha</h2>
+          <img src="img/mascot.jpg" alt="Pixel art of a green frog holding a red umbrella under the rain, with a small lantern" width="480" height="480" style="border-radius:7px;border:1px solid rgba(255,94,219,.45);box-shadow:0 0 30px -12px rgba(255,94,219,.9)">
+          <p class="tiny" style="margin:10px 0 0">guardian of the guestbook · afraid of nothing except dry air</p>
+        </div>
+      </section>
+
+      <section class="win" aria-labelledby="h-poll">
+        <div class="win__bar"><span class="win__name">POLL.CGI</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-poll" style="font-size:9px">what is the best chai</h2>
+          <form class="poll" data-poll>
+            <label><input type="radio" name="chai" value="0" data-count="418"><span>the roadside 4am one</span><span class="pct">--%</span><span class="bar" aria-hidden="true"><i></i></span></label>
+            <label><input type="radio" name="chai" value="1" data-count="963"><span>strong, small, in a glass</span><span class="pct">--%</span><span class="bar" aria-hidden="true"><i></i></span></label>
+            <label><input type="radio" name="chai" value="2" data-count="201"><span>masala by my aunt</span><span class="pct">--%</span><span class="bar" aria-hidden="true"><i></i></span></label>
+            <label><input type="radio" name="chai" value="3" data-count="77"><span>the milk-tea from the train</span><span class="pct">--%</span><span class="bar" aria-hidden="true"><i></i></span></label>
+            <p style="margin:2px 0 0"><button class="btn btn--ghost" type="submit">count my vote</button></p>
+          </form>
+          <p class="tiny poll__note">vote with your heart. results are made up, like all polls.</p>
+        </div>
+      </section>
+
+      <section class="win" id="webring" aria-labelledby="h-ring">
+        <div class="win__bar"><span class="win__name">WEBRING: ANILINK.CGI</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-ring" style="font-size:9px">anilink — 12 sites, no feed</h2>
+          <p class="tiny" style="margin:0 0 9px">a ring of small handmade sites. we read each other.</p>
+          <div class="webring">
+            <div class="ringrow"><a href="#webring">« prev</a><a href="https://neocities.org/browse" rel="noopener" target="_blank">random</a><a href="#webring">next »</a></div>
+            <div class="ringrow"><span>the tea annex</span><span>frogpost</span><span>chai &amp; code</span></div>
+            <div class="ringrow"><span>kerala.cam</span><span>tape loop</span><span>cassette wall</span></div>
+            <p class="tiny" style="margin:6px 0 0">want in? <a href="guestbook.html">leave a note</a> with your URL.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="win" aria-labelledby="h-quotes">
+        <div class="win__bar"><span class="win__name">QUOTES.TXT</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-quotes" style="font-size:9px">things i wrote on receipts</h2>
+          <ul class="quotes">
+            <li>“the web is a place you go, not a thing that is done to you.”<cite>— me, to a rickshaw driver</cite></li>
+            <li>“every single site was once somebody's first attempt.”<cite>— taped to my monitor</cite></li>
+            <li>“make it ugly, make it yours, ship it before dinner.”<cite>— the only rule</cite></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="win" aria-labelledby="h-sound">
+        <div class="win__bar"><span class="win__name">SOUND.CFG</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-sound" style="font-size:9px">the ambience machine</h2>
+          <p class="tiny" style="margin:0 0 9px">a synthesized rain bed, made live in the browser. no audio files, no autoplay.</p>
+          <p class="row" style="margin:0"><button class="btn btn--ghost" type="button" id="ambience">▶ start rain sound</button><span class="tiny" data-state="sound">off</span></p>
+        </div>
+      </section>
+
+      <section class="win" aria-labelledby="h-note">
+        <div class="win__bar"><span class="win__name">NOTE_TO_SELF.TXT</span><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body" style="padding:14px">
+          <h2 class="h" id="h-note" style="font-size:9px">bookmark this</h2>
+          <p class="small" style="margin:0 0 10px">If you liked anything on this page, do the old thing: open a text editor, make a site about something you love, and put a link to somebody else's on it.</p>
+          <p class="row" style="margin:0"><a class="btn" href="about.html#why">why i do this</a><a class="btn btn--ghost" href="guestbook.html">say hi</a></p>
+        </div>
+      </section>
+
+    </aside>
+  </div>
+
+  <!-- ============ footer ============ -->
+  <footer class="foot">
+    <div class="foot__inner">
+      <div class="badges foot__badges">
+        <a href="about.html#why"><img src="img/btn-html401.png" alt="HTML 4.01" width="88" height="31"></a>
+        <a href="about.html#why"><img src="img/btn-antic.png" alt="ANTI .AI" width="88" height="31"></a>
+        <a href="about.html#why"><img src="img/btn-ntuples.png" alt="NO METAVERSE" width="88" height="31"></a>
+        <a href="shrines.html#sound"><img src="img/btn-getsound.png" alt="SOUND ON" width="88" height="31"></a>
+        <a href="about.html#kerala"><img src="img/btn-kerala.png" alt="KERALA WEB" width="88" height="31"></a>
+      </div>
+      <p>© 2001–<span data-year>2026</span> <b>monsoon.exe</b> · built by hand in a flat with a bad fan · hosted with love on neocities</p>
+      <nav aria-label="Footer">
+        <a href="index.html">home</a>
+        <a href="journal.html">field notes</a>
+        <a href="shrines.html">shrines</a>
+        <a href="guestbook.html">guestbook</a>
+        <a href="about.html">about</a>
+      </nav>
+      <p class="tiny">no analytics · no adverts · no AI training · <a href="about.html#why">read the manifesto</a></p>
+      <p class="tiny" style="color:#4d4770">made on a laptop that has been dropped twice · best in any browser</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ============ customizer ============ -->
+<div class="cfg pinned" data-cfg>
+  <div class="cfg__panel" role="group" aria-label="Page settings">
+    <h3>page settings</h3>
+    <div class="cfg__row"><span>rain</span><button type="button" data-toggle="rain" aria-pressed="true">toggle</button><span class="tiny" data-state="rain">on</span></div>
+    <div class="cfg__row"><span>scanlines</span><button type="button" data-toggle="scan" aria-pressed="true">toggle</button><span class="tiny" data-state="scan">on</span></div>
+    <div class="cfg__row"><span>sparkles</span><button type="button" data-toggle="sparkle" aria-pressed="true">toggle</button><span class="tiny" data-state="sparkle">on</span></div>
+    <p class="tiny" style="margin:2px 0 0;color:#6f6899">keys: R rain · S scanlines</p>
+  </div>
+  <button class="cfg__toggle" type="button" data-cfg-toggle aria-expanded="false" aria-label="Open page settings"><span class="gear" aria-hidden="true">⚙</span> settings</button>
+</div>
+
+<canvas id="trail" aria-hidden="true"></canvas>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
