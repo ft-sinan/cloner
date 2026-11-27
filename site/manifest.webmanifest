@@ -1,0 +1,13 @@
+{
+  "name": "monsoon.exe — sinaan's homepage",
+  "short_name": "monsoon.exe",
+  "description": "A hand-coded homepage from Kerala: field notes, shrines, a guestbook and a frog.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#06050d",
+  "theme_color": "#06050d",
+  "icons": [
+    { "src": "img/favicon.png", "sizes": "64x64", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -12,7 +12,7 @@ site/
 ├── shrines.html        4 shrines: tea, frogs, lo-fi machines, the old web
 ├── guestbook.html      the guestbook + a working (local) sign form
 ├── about.html          about me, the manifesto, 16 curated links, colophon
-├── 404.html            a friendly lost page
+├── not_found.html      a friendly lost page (Neocities serves this as its 404)
 ├── style.css           the whole design system (~30 kb)
 ├── js/main.js          rain canvas, typewriter, guestbook, poll, mixer, settings
 ├── fonts/              self-hosted woff2 (SIL OFL 1.1, licences included)
@@ -53,6 +53,18 @@ site/
 There is nothing to configure — the site is fully static. Neocities cannot run server code,
 but none of the interactive bits need a server (see below).
 
+## Upload from the Neocities dashboard (no terminal needed)
+
+1. Delete the starter files Neocities created: `index.html`, `style.css`, `robots.txt`,
+   `neocities.png`, `not_found.html` (they will be replaced by yours).
+2. **Upload** → select everything inside `site/` → upload. On a folder-limited dialog you may
+   need two passes: the files first, then the `img/`, `fonts/` and `js/` folders.
+3. Visit <https://sinaan.neocities.org> (or <https://sinanmk.my.id>) and hard-refresh.
+
+Neocities caps free sites at 1 GB / 200 files; this site is **1.6 MB in 55 files**, so there is
+plenty of room. Keep the folder names exactly as they are (`img/`, `fonts/`, `js/`) or the
+relative paths break.
+
 ## Preview locally
 
 ```bash
@@ -86,6 +98,9 @@ swap the `initGuestbook()` submit handler and keep everything else.
 - `prefers-reduced-motion` turns off rain, sparkles, tickers and blinking.
 - A settings panel (bottom right) with manual switches for rain / scanlines / sparkles.
 - No web fonts from third parties (self-hosted woff2), no analytics, no iframes, no embeds.
+- Canonical URLs + `og:url` point at the custom domain (`sinanmk.my.id`), while
+  `robots.txt`'s sitemap also uses it; the sitemap lives at `/sitemap.xml`.
+- Neocities only recognises **`not_found.html`** as the custom 404 page (not `404.html`).
 - Total page weight of the home page: **≈ 1.2 MB**, most of it the banner image; HTML+CSS+JS
   together are under 100 kb.
 
@@ -99,3 +114,10 @@ swap the `initGuestbook()` submit handler and keep everything else.
   then hand-tuned), no third-party assets.
 - Hosting: [Neocities](https://neocities.org) — no ads, no AI data selling, static only.
 - This is a fan-made tribute site. "Neocities" is used descriptively; it is not affiliated.
+
+### The folder-preserving alternative: SFTP
+
+Your dashboard has **“SFTP and WebDAV Info”** (bottom of the file list). Any GUI client
+(Cyberduck, FileZilla, Transmit) can drag `site/`'s contents straight onto the server with the
+folder structure intact — usually faster and less error-prone than the browser uploader, and
+no CLI install required. Use it if uploading `img/`, `fonts/` and `js/` by hand feels tedious.

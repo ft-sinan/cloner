@@ -70,12 +70,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 ::selection{background:var(--magenta);color:#0a0614}
 
 .skip{
-  position:absolute;left:8px;top:-60px;z-index:120;
+  position:absolute;left:8px;top:8px;z-index:120;
+  transform:translateY(-160%);
   background:var(--acid);color:#0a0614;padding:10px 14px;
   font-family:var(--pixel);font-size:10px;border-radius:6px;
   transition:top .18s ease;
 }
-.skip:focus{top:8px}
+.skip:focus{transform:none}
 
 /* ---------- ticker ---------- */
 
