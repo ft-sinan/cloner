@@ -1,6 +1,6 @@
 # monsoon.exe
 
-A hand-coded Y2K personal homepage — built to live on **[Neocities](https://neocities.org)**.
+A hand-coded Y2K personal homepage — live (soon) at **[sinaan.neocities.org](https://sinaan.neocities.org)** on [Neocities](https://neocities.org).
 
 Five pages, one stylesheet, one small JavaScript file, zero dependencies, zero trackers.
 Everything you see in `site/` is what gets uploaded; there is no build step.
@@ -28,7 +28,7 @@ site/
 3. Point the site's own links (buttons, sitemap, canonical URLs) at your username:
 
    ```bash
-   ./deploy/set-sitename.sh YOURUSERNAME
+   ./deploy/set-sitename.sh sinaan   # already done; run it again if the username changes
    ```
 
 4. From this repo:

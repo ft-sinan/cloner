@@ -227,7 +227,7 @@
     { name: "rainfrog", url: "https://neocities.org/site/rainfrog", when: "15 Nov 2026 · 23:41", mood: "listening to: Boards of Canada — Roygbiv", msg: "found you through the shrine wall. the dithered banner is doing something to my brain. added you to my links page, no takebacks <3" },
     { name: "kerala.exe", url: "", when: "09 Nov 2026 · 10:02", mood: "sitting under the fan, power cut again", msg: "your monsoon photos smell like my grandmother's veranda. also: the tiled background loads in 0.4s on 2G. respect." },
     { name: "gifhunter99", url: "https://neocities.org/site/gifhunter99", when: "02 Nov 2026 · 03:17", mood: "counting frames", msg: "came for the frog, stayed for the anilink webring. bookmarking the tea page. tell me you have more tea pages." },
-    { name: "nalini", url: "", when: "24 Oct 2026 · 19:55", mood: "chai #4 today", msg: "guestbook entry number one, basically. hello from the future where this page is still up. keep it up." }
+    { name: "sinaan", url: "https://sinaan.neocities.org", when: "24 Oct 2026 · 19:55", mood: "chai #4 today", msg: "guestbook entry number one, basically: signing my own book so it is not empty. hello from the future where this page is still up." }
   ];
 
   function esc(s) {
